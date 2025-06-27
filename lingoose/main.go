@@ -19,7 +19,7 @@ func main() {
 	}
 
 	os.Getenv("OPENAI_API_KEY")
-	
+
 	myThread := thread.New().AddMessage(
 		thread.NewUserMessage().AddContent(
 			thread.NewTextContent("Tell me a joke about geese"),
@@ -27,6 +27,7 @@ func main() {
 	)
 
 	err = openai.New().Generate(context.Background(), myThread)
+
 	if err != nil {
 		panic(err)
 	}
