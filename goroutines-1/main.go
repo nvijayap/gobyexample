@@ -11,5 +11,6 @@ func main() {
 		fmt.Println(msg)
 	}("goroutine")
 
+	// allows above goroutine to complete before exiting program
 	time.Sleep(time.Millisecond)
 }
