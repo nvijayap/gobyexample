@@ -16,5 +16,5 @@ func main() {
 
     mayPanic()
 
-    fmt.Println("After mayPanic()")
+    fmt.Println("After mayPanic()") // unreachable!
 }
